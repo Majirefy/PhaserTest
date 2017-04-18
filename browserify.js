@@ -1,7 +1,7 @@
 var browserify = require('browserify');
 var tsify = require('tsify');
 
-browserify({)
+browserify()
     .add('src/app.ts')
     .plugin(tsify, { project: '.' })
     .transform('browserify-shim')
